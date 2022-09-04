@@ -1,0 +1,120 @@
+.box{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.box .callus{
+    width: 50%;   
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px #4b5563 solid;
+    margin-bottom: 1.5rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.box .contexttext{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.box .contexttext p{
+    text-align: center;
+}
+
+.sociallinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.itemsocial{
+    height: 150px;
+    width: 250px;
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+
+.itemsocial .icon{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsocial .icon i{
+    font-size: 100px;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.itemsocial .icon i.fa-telegram-plane:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+
+.sociallinks>div .icon i.fa-whatsapp:hover{
+    transform: scale(1.1);
+    color: green;
+}
+
+.itemsocial .icon i.fa-instagram:hover{
+    transform: scale(1.1);
+    color: purple;
+}
+
+.sitemsocial .textsocail{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.itemsocial .textsocail p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.mainconatiner{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainconatiner .mainsection{
+    width: 90%;
+    height: 650px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imagecontext{
+    width: 50%;
+    height: 650px;
+}
+
+.imagecontext img{
+    width: 100%;
+    height: 650px;
+}

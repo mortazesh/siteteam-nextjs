@@ -1,0 +1,153 @@
+.headerhome {
+    width: 100%;
+    height: 720px;
+    background: url('../public/Images/alesia-kazantceva-XLm6-fPwK5Q-unsplash.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: #2f3158;
+}
+
+.bootomheader {
+    width: 100%;
+    height: 530px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bootomheader .boxtext {
+    width: 40%;
+    height: 400px;
+    background: #ffffff;
+    opacity: 0.7;
+    margin-right: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bootomheader .boxtext h2 {
+    margin-right: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.bootomheader .boxtext p {
+    width: 85%;
+    height: 250px;
+    font-size: 0.9em;
+    text-align: justify;
+    margin-right: 40px;
+    margin-top: 15px;
+    line-height: 1.5em;
+}
+
+.nav {
+    width: 90%;
+    height: 75px;
+    background-color: #EAEAF3;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 15%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #738CAC;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.icon{
+    display: none;
+}
+
+.menu {
+    width: 75%;
+    height: 75px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.menuitem {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color ease 1s;
+}
+
+.menuitem a {
+    color: black;
+    text-decoration: none;
+}
+
+.menuitem a:hover {
+    color: #4b5563;
+}
+
+@media (max-width: 640px) {
+    .menu,.search {
+        display: none;
+    }
+    .logo{
+        width: 75%;
+        justify-content: flex-start;
+        margin-right: 15px;
+    }
+    .icon{
+        width: 20%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .icon>div{
+        width: 50%;
+        height: 5px;
+        background-color: black;
+        margin: 2px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+    .nav {
+        width: 95%;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .menuitem {
+        width: 90px;
+    }
+}

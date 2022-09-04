@@ -1,0 +1,128 @@
+.footerconatiner{
+    width: 100%;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2f3158;
+    margin-top: 15px;
+    color: white;
+}
+
+.topfooter{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topfooter .menufooter{
+    width: 23%;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.topfooter .menufooter .titlefooter{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.topfooter .menufooter .desabout{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.topfooter .menufooter .desabout p{
+    margin-top: 10px;
+}
+
+.topfooter .menufooter ul li{
+    width: 50%;
+    height: 30px;
+    margin-top: 2px;
+}
+
+.topfooter .menufooter ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color ease 1s;
+}
+
+.topfooter .menufooter ul li a:hover{
+    color: #949494;
+}
+
+.menulistfooter{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    list-style: none;
+}
+
+.menuitemfooter{
+    width: 50%;
+    height: 30px;
+    margin-top: 2px;
+}
+
+.menuitemfooter a{
+    text-decoration: none;
+    color: white;
+    transition: color ease 1s;
+}
+
+.menuitemfooter a:hover{
+    color: #949494;
+}
+
+.menufooter{
+    width: 23%;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.menufooter .titlefooter{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.menufooter .imagefooter{
+    width: 100%;
+    height: 175px;
+}
+
+.menufooter .imagefooter img{
+    width: 100%;
+    height: 175px;
+    border-radius: 10px;
+}
