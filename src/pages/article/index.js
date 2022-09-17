@@ -1,6 +1,10 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import { Suspense } from 'react'
+import axios from 'axios'
+
+// CREATE LAZY LOAD
+import ListArticle from '../../componentes/article/list-article/listarticle'
 
 const Header = dynamic(() => import('../../componentes/ui/header/header'), {
     suspense: true
@@ -9,7 +13,8 @@ const Fotter = dynamic(() => import('../../componentes/ui/fotter/footer'), {
     suspense: true
 })
 
-export default function Articles() {
+export default function Articles({ result }) {
+
     return (
         <>
             <Suspense fallback={<p>load...</p>}>
@@ -23,13 +28,21 @@ export default function Articles() {
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 </Head>
                 <Header />
-                <div>
-                    <p>
-                        aticle page
-                    </p>
-                </div>
+                <ListArticle result={result}/>
                 <Fotter />
             </Suspense>
         </>
     )
+}
+
+export async function getServerSideProps() {
+
+    const data = await axios.get('https://localhost:44351/api/Article/GetAll')
+    const result = await data.json()
+
+    return {
+        props: {
+            result
+        },
+    }
 }

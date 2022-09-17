@@ -6,6 +6,9 @@ import { Suspense } from 'react'
 const Menu = dynamic(() => import('./menu/menu'), {
     suspense: true
 })
+const Context = dynamic(() => import('./contxet/context'), {
+    suspense: true
+})
 const Logo = dynamic(() => import('./logo/logo'), {
     suspense: true
 })
@@ -21,9 +24,8 @@ export default function TopFotter() {
                 </div>
                 <div className={styles.desabout}>
                     <p>
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-                        ستون و سطرآنچنان که لازم است،
+                        تیم برنامه‌نویسی Net Elites از سال 1400،  با 5  متخصص در زمینه‌ی طراحی و توسعه‌ی وب‌سایت و با شعار رویای شما، توصیه ما فعالیت خود را آغاز کرد.
+                        تیم Net Elites متشکل از مرتضی شهریاری، سرپرست تیم و برنامه‌نویس Back-End،فاطمه شهابی طراح UI/UX، دانیال معینی‌تبار و عرفان مهمان‌دوست برنامه‌نویسان‌ Front-End، انیس شیبک برنامه‌نویس Back-End است.
                     </p>
                 </div>
             </div>
@@ -43,6 +45,9 @@ export default function TopFotter() {
                         راه های ارتباطی با ما
                     </h3>
                 </div>
+                <Suspense fallback={<p>load...</p>}>
+                    <Context />
+                </Suspense>
             </div>
             <Suspense fallback={<p>load...</p>}>
                 <Logo />

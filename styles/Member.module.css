@@ -1,0 +1,100 @@
+.member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.textmember{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textmember h1{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.textmember p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.imgmember{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.imgmember img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.boxy1,.boxy2,.boxy3,.boxy4{
+    width: 90%;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.boxy1 .title
+,.boxy2 .title
+,.boxy3 .title
+,.boxy4 .title{
+    width: 25%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxy1 .title img
+,.boxy2 .title img
+,.boxy3 .title img
+,.boxy4 .title img{
+    width: 100px;
+    height: 100px;
+}
+
+.boxy1 .title h3
+,.boxy2 .title h3
+,.boxy3 .title h3
+,.boxy4 .title h3{
+    width: 100px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.boxy1 .text
+,.boxy2 .text
+,.boxy3 .text
+,.boxy4 .text{
+    width: 75%;
+    height: 224px;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.boxy1 .text p
+,.boxy2 .text p
+,.boxy3 .text p
+,.boxy4 .text p{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

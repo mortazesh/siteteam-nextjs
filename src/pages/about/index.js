@@ -20,8 +20,8 @@ export default function About() {
                     <title>
                         NetElites | درباره ی ما
                     </title>
-                    <meta name="description" content="Free Web tutorials" />
-                    <meta name="keywords" content="HTML, CSS, JavaScript" />
+                    <meta name="description" content="تیم برنامه‌نویسی Net Elites از سال 1400،  با 5  متخصص در زمینه‌ی طراحی و توسعه‌ی وب‌سایت و با شعار رویای شما، توصیه ما فعالیت خود را آغاز کرد." />
+                    <meta name="keywords" content="Net Elites,برنامه نویسی, تیم برنامه نویسی,طراحی سایت,سئو" />
                     <meta name="author" content="morteza shahriari" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 </Head>
